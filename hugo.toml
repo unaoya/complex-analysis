@@ -2,3 +2,5 @@ baseURL = 'https://unaoya.github.io/complex-analysis/'
 languageCode = "ja-jp"
 title = "複素解析入門"
 theme = "hugo-book"
+publishDir = "docs"
+defaultContentLanguage = "ja"
