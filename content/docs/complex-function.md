@@ -3,7 +3,7 @@ title: "Complex Function"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
-# bookHidden: false
+# bookHidden: true
 # bookCollapseSection: false
 # bookComments: false
 # bookSearchExclude: false
