@@ -9,23 +9,9 @@
     <lastBuildDate>Sun, 14 Jul 2024 23:10:31 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/complex-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Complex Function</title>
-      <link>http://localhost:1313/complex-analysis/docs/complex-function/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/complex-analysis/docs/complex-function/</guid>
-      <description>ここでは複素関数について説明する。 このノートにおいて、複素関数とは複素平面のある部分集合で定義された複素数値関数をいう。 $f$が$U\subset \CC$で定義された複素関数であることを$f:U\to \CC$と表す。&#xA;ヒント． ヒント． ヒント． ヒント． \(\int_{-\infty}^{\infty}e^{-t^2}dt=\pi.\) \( \int_{-\infty}^{\infty}e^{-t^2}dt=\pi.\) 以下の式が成り立つ．&#xA;次の式が成り立つ．\(\int_{-\infty}^{\infty}e^{-t^2}dt=\pi\). </description>
-    </item>
-    <item>
-      <title>Contour Integral</title>
-      <link>http://localhost:1313/complex-analysis/docs/contour-integral/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/complex-analysis/docs/contour-integral/</guid>
-      <description>ここでは複素関数の線積分について解説する。 複素平面の部分集合$$U\subset C$$上定義された複素関数$$f:U\to C$$と$$U$$内の曲線$$\gamma:[a,b]\to U$$に対し、 線積分$$\int_Cfdz$$を定義することができる。&#xA;\[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\] </description>
-    </item>
-    <item>
       <title>コーシーの積分定理</title>
       <link>http://localhost:1313/complex-analysis/docs/cauchy-integral-theorem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Jul 2024 23:10:31 +0900</pubDate>
       <guid>http://localhost:1313/complex-analysis/docs/cauchy-integral-theorem/</guid>
       <description>コーシーの積分定理 # ここではコーシーの積分定理について説明する。&#xA;以下の式が成り立つ．</description>
     </item>
@@ -35,6 +21,20 @@
       <pubDate>Sun, 14 Jul 2024 23:10:31 +0900</pubDate>
       <guid>http://localhost:1313/complex-analysis/docs/test/</guid>
       <description>このノートでは複素解析の入門的な内容を解説します。 複素数や複素関数から初めて、正則関数、複素線積分、コーシーの積分定理、留数定理などを解説します。</description>
+    </item>
+    <item>
+      <title>複素線積分</title>
+      <link>http://localhost:1313/complex-analysis/docs/contour-integral/</link>
+      <pubDate>Sun, 14 Jul 2024 23:10:31 +0900</pubDate>
+      <guid>http://localhost:1313/complex-analysis/docs/contour-integral/</guid>
+      <description>ここでは複素関数の線積分について解説する。 複素平面の部分集合$$U\subset C$$上定義された複素関数$$f:U\to C$$と$$U$$内の曲線$$\gamma:[a,b]\to U$$に対し、 線積分$$\int_Cfdz$$を定義することができる。&#xA;\[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\] </description>
+    </item>
+    <item>
+      <title>複素関数</title>
+      <link>http://localhost:1313/complex-analysis/docs/complex-function/</link>
+      <pubDate>Sun, 14 Jul 2024 23:10:31 +0900</pubDate>
+      <guid>http://localhost:1313/complex-analysis/docs/complex-function/</guid>
+      <description>ここでは複素関数について説明する。 このノートにおいて、複素関数とは複素平面のある部分集合で定義された複素数値関数をいう。 $f$が$U\subset \CC$で定義された複素関数であることを$f:U\to \CC$と表す。&#xA;ヒント． ヒント． ヒント． ヒント． \(\int_{-\infty}^{\infty}e^{-t^2}dt=\pi.\) \( \int_{-\infty}^{\infty}e^{-t^2}dt=\pi.\) 以下の式が成り立つ．&#xA;次の式が成り立つ．\(\int_{-\infty}^{\infty}e^{-t^2}dt=\pi\). </description>
     </item>
   </channel>
 </rss>
