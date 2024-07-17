@@ -1,13 +1,8 @@
----
-title: "Contour Integral"
-weight: 1
-# bookFlatSection: false
-# bookToc: true
-# bookHidden: false
-# bookCollapseSection: false
-# bookComments: false
-# bookSearchExclude: false
----
++++
+title = '複素線積分'
+date = 2024-07-14T23:10:31+09:00
+draft = false
++++
 
 ここでは複素関数の**線積分**について解説する。
 複素平面の部分集合$$U\subset C$$上定義された複素関数$$f:U\to C$$と$$U$$内の曲線$$\gamma:[a,b]\to U$$に対し、

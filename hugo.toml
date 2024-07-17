@@ -3,4 +3,8 @@ languageCode = "ja-jp"
 title = "複素解析入門"
 theme = "hugo-book"
 publishDir = "docs"
-defaultContentLanguage = "ja"
+
+[params]
+  BookTheme = 'auto'
+  BookRepo = 'https://github.com/htakeuchi0/htakeuchi0.github.io-sources'
+  BookSearch = false

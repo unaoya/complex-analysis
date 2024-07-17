@@ -1,13 +1,8 @@
----
-title: "Complex Function"
-weight: 1
-# bookFlatSection: false
-# bookToc: true
-# bookHidden: true
-# bookCollapseSection: false
-# bookComments: false
-# bookSearchExclude: false
----
++++
+title = '複素関数'
+date = 2024-07-14T23:10:31+09:00
+draft = false
++++
 
 ここでは複素関数について説明する。
 このノートにおいて、**複素関数**とは複素平面のある部分集合で定義された複素数値関数をいう。

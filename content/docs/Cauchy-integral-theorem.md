@@ -1,13 +1,8 @@
----
-title: "コーシーの積分定理"
-weight: 1
-# bookFlatSection: false
-# bookToc: true
-# bookHidden: false
-# bookCollapseSection: false
-# bookComments: false
-# bookSearchExclude: false
----
++++
+title = 'コーシーの積分定理'
+date = 2024-07-14T23:10:31+09:00
+draft = false
++++
 
 # コーシーの積分定理
 
