@@ -8,11 +8,22 @@ draft = false
 
 ここではコーシーの積分定理について説明する。
 
+
+{{< katex display=true >}}
+  \int_Cf(z)dz=0
+{{< /katex >}}
+
 {{< hint >}}
 
 以下の式が成り立つ．
 
-{{< katex display >}}
+{{< katex display=true >}}
   \int_Cf(z)dz=0
 {{< /katex >}}
 {{< /hint >}}
+
+証明について述べる。
+
+\\(f\\)が正則であるため、\\(z\\)の一次式で近似できる。
+
+\\(C\\)が長方形の周のである場合に証明する。
