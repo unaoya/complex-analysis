@@ -9,6 +9,8 @@ weight: 1
 # bookSearchExclude: false
 ---
 
+# 冪級数について
+
 べき級数の収束半径，べき級数の様々な演算に関して解説する．
 また，正則関数のべき級数展開について解説する．
 
@@ -67,7 +69,7 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $$
   \lim_{n\to\infty}\frac{\lvert a_{n+1}\rvert}{\lvert a_n\rvert}=\frac{1}{R}
   $$
-{{ /hint }}
+{{< /hint >}}
 
 {{< hint >}}
   $$
@@ -88,7 +90,7 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   f'(z)=\sum_{n=0}^\infty na_nz^{n-1}=\sum_{n=0}^\infty(n+1)a_{n+1}z^n
   $$
   が成り立ち、これも同じく収束半径$R$である。
-{{ /hint }}
+{{< /hint >}}
 
 {{< hint >}}
   $$
