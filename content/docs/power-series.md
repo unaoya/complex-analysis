@@ -1,5 +1,5 @@
 ---
-title: "Power Series"
+title: "べき級数"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
@@ -9,13 +9,13 @@ weight: 1
 # bookSearchExclude: false
 ---
 
-# 冪級数について
+# べき級数について
 
 べき級数の収束半径，べき級数の様々な演算に関して解説する．
 また，正則関数のべき級数展開について解説する．
 
 冪級数とは。
-$\alpha\in\CC$に対し、$\alpha$を中心とする冪級数とは、$a_n\in\CC$を用いて定まる
+$\alpha\in\mathbb{C}$に対し、$\alpha$を中心とする冪級数とは、$a_n\in\mathbb{C}$を用いて定まる
 $$
 \sum_{n=0}^\infty a_n(z-\alpha)^n
 $$
@@ -43,12 +43,12 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $$
   が絶対収束するとは、
   $$
-  \sum_{n=0}^\infty\abs{a_n}\abs{z}^n
+  \sum_{n=0}^\infty\lvert a_n\rvert\lvert z\rvert^n
   $$
   が収束することをいう。
 {{< /hint >}}
 
-絶対収束するなら収束する。
+冪級数が絶対収束するなら収束する。
 
 {{< hint >}}
   べき級数の収束半径。
@@ -87,7 +87,7 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $f(z)=\sum_{n=0}^\infty a_nz^n$の収束半径が$R>0$であるとする。
   このとき、収束円板上で連続であり、正則で、
   $$
-  f'(z)=\sum_{n=0}^\infty na_nz^{n-1}=\sum_{n=0}^\infty(n+1)a_{n+1}z^n
+  f\'(z)=\sum_{n=0}^\infty na_nz^{n-1}=\sum_{n=0}^\infty(n+1)a_{n+1}z^n
   $$
   が成り立ち、これも同じく収束半径$R$である。
 {{< /hint >}}
@@ -110,7 +110,8 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $f(z)=\sum_{n=0}^\infty a_n(z-\alpha)^n$とすると、$a_n=\dfrac{1}{n!}f^{(n)}(\alpha)$である。
 {{< /hint >}}
 
-正則関数の冪級数展開。
+## 正則関数の冪級数展開
+
 コーシーの積分公式を用いる。
 $$
 f(z)=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{\zeta-z}d\zeta
@@ -127,7 +128,7 @@ $$
 $\lvert\dfrac{z-\alpha}{\zeta-\alpha}\rvert&lt;1$ならよい。
 一様収束すれば順序交換できる。
 
-初等関数のべき級数展開．一致の定理
+## 初等関数のべき級数展開
 最初にロピタルの公式を述べた後，べき級数の例として初等関数のべき級数展開を紹介し，最後に解析接続の原理である一致の定理について解説する．
 
 ロピタルの公式
@@ -182,8 +183,8 @@ $$
 {{< /hint >}}
 
 項別微積分を用いて冪級数展開を計算する。
-$(\log(1+z))'=\frac{1}{1+z}$を用いて$z=0$中心の$\log(1+z)$の冪級数展開と収束半径を求める。
-$(\cos z)'=-\sin z$を用いて$z=0$中心の$\sin z$の冪級数展開と収束半径を求める。
+$(\log(1+z))\'=\frac{1}{1+z}$を用いて$z=0$中心の$\log(1+z)$の冪級数展開と収束半径を求める。
+$(\cos z)\'=-\sin z$を用いて$z=0$中心の$\sin z$の冪級数展開と収束半径を求める。
 $z=0$中心の$\dfrac{1}{(1-z)^3}$の冪級数展開と収束半径を求める。
 $\dfrac{1}{\cos z}$を$z=0$中心に冪級数展開し、収束半径を求める。
 $\tan z$を$z=0$中心に冪級数展開し、収束半径を求める。
@@ -199,7 +200,7 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
     $f$は領域$\Omega$で正則とする。
     このとき、$a\in\Omega$に対し、ある$\Omega$で正則な関数$f_n(z)$が存在して
     \begin{align*}
-      f(z)=f(a)+f'(a)(z-a)+\frac{f^{(2)}(a)}{2!}(z-a)^2+\cdots+\frac{f^{(n-1)}(a)}{(n-1)!}(z-a)^{n-1}+f_n(z)(z-a)^n
+      f(z)=f(a)+f\'(a)(z-a)+\frac{f^{(2)}(a)}{2!}(z-a)^2+\cdots+\frac{f^{(n-1)}(a)}{(n-1)!}(z-a)^{n-1}+f_n(z)(z-a)^n
     \end{align*}
     となる。
   
@@ -265,7 +266,7 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
 集積点とは。
 孤立点でないこと。
 $z=\alpha$が零点の集積点であるとは（$f(\alpha)\neq0$でもよい？）
-任意の$\epsilon$に対してある$z\in\CC$で$0&lt;\lvert z-\alpha\rvert&lt;\epsilon$かつ$f(z)=0$となるものが存在すること。
+任意の$\epsilon$に対してある$z\in\mathbb{C}$で$0&lt;\lvert z-\alpha\rvert&lt;\epsilon$かつ$f(z)=0$となるものが存在すること。
 
 {{< hint >}}
     $f(z), g(z)$を領域$D$で正則な関数で、$D$内に集積点を持つ集合の上で$f(z)=g(z)$とする。
