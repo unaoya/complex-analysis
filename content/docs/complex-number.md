@@ -1,5 +1,5 @@
 ---
-title: "Complex Number"
+title: "複素数"
 weight: 1
 # bookFlatSection: false
 # bookToc: true

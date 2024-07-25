@@ -25,13 +25,13 @@ $$
 この計算を念頭において、次のように留数を定義する。
   
 {{< hint >}}
-  孤立特異点$z=a$での$f(z)$の留数とは、ある円環$0<\abs{z-a}<\delta$で
+  孤立特異点$z=a$での$f(z)$の留数とは、ある円環$0<\lvert z-a\rvert<\delta$で
   $$
     f(z)-\frac{R}{z-a}
   $$
   が$1$価正則関数の導関数になるような複素数$R$のことである。
 
-  これを$R=\Res_{z=a}f(z)$と表す。
+  これを$R=Res_{z=a}f(z)$と表す。
 {{< /hint >}}
 
 {{< hint >}}
@@ -50,18 +50,18 @@ $$
 $$
 において、径数$a_n$は
 $$
-  a_n=\frac{1}{2\pi i}\int_{\abs{\zeta-\alpha}=r}\frac{f(\zeta)}{(\zeta-\alpha)^{n+1}}d\zeta
+  a_n=\frac{1}{2\pi i}\int_{\lvert\zeta-\alpha\rvert=r}\frac{f(\zeta)}{(\zeta-\alpha)^{n+1}}d\zeta
 $$
 と表すことができた。
 このうち、$(z-\alpha)^{-1}$の係数$a_{-1}$を$z=\alpha$における留数といい、
 $$
-  a_{-1}=\Res_{z=\alpha}f(z)
+  a_{-1}=Res_{z=\alpha}f(z)
 $$
 と表す。
 
 つまり、
 $$
-  \Res_{z=\alpha}f(z)=\frac{1}{2\pi i}\int_{\abs{\zeta-\alpha}=r}f(z)dz
+  \Res_{z=\alpha}f(z)=\frac{1}{2\pi i}\int_{\lvert\zeta-\alpha\rvert=r}f(z)dz
 $$
 である。
 
@@ -129,8 +129,7 @@ $$
 
   このとき、
   $$
-    f(z)&=\frac{1}{z^2+1}\\
-    &=\frac{1}{2i}(\frac{1}{z-i}-\frac{1}{z+i})
+    f(z)=\frac{1}{z^2+1}=\frac{1}{2i}(\frac{1}{z-i}-\frac{1}{z+i})
   $$
   は$z=i$で$1$位の極をもち、そこでの留数は$\dfrac{1}{2i}$である。
   また、それ以外では正則である。
@@ -141,20 +140,20 @@ $$
   $$
   となる。
 
-  $C_R$の円弧の部分$C\'_R$の積分は次のようにして$R\to\infty$での値を評価できる。
-  まず、$\abs{z}=R$であれば
+  $C_R$の円弧の部分$C_R$の積分は次のようにして$R\to\infty$での値を評価できる。
+  まず、$\lvert z\rvert=R$であれば
   $$
-    \abs{\frac{1}{z^2+1}}\leq\abs{\frac{1}{R^2+1}}
+    \lvert \frac{1}{z^2+1}\rvert\leq\lvert\frac{1}{R^2+1}\rvert
   $$
   である。
   したがって、
   $$
-    \abs{\int_{C\'_R}\frac{1}{z^2+1}dz}
-    &=
-    \abs{\int^\pi_0\frac{1}{R^2\exp(2\pi it)+1}R2\pi i\exp(2\pi it)dt}\\
-    &\leq
-    2\pi R\int^\pi_0\frac{1}{R^2+1}dt\\
-    &=
+    \lvert\int_{C\'_R}\frac{1}{z^2+1}dz\rvert
+    =
+    \lvert\int^\pi_0\frac{1}{R^2\exp(2\pi it)+1}R2\pi i\exp(2\pi it)dt\rvert
+    \leq
+    2\pi R\int^\pi_0\frac{1}{R^2+1}dt
+    =
     2\pi^2\frac{R}{R^2+1}
   $$
   となるので、$R\to\infty$でこの積分は$0$に収束することがわかる。
@@ -168,9 +167,8 @@ $$
 
 ## 偏角の原理
 
-有理形関数$f(z)$を$z=a$の周りでローラン級数展開することで、$f\'/f$の$z=a$での留数が$z=a$での極や零点の位数となることがわかる。
+有理形関数$f(z)$を$z=a$の周りでローラン級数展開することで、$f\'(z)/f(Z)$の$z=a$での留数が$f(z)$の$z=a$での極や零点の位数を用いて計算できることがわかる。
 このことを使うと以下がわかる。    
-
 
 {{< hint >}}
   $f(z)$は$\Omega$で有理形で、その零点を$a_1,\ldots,a_n$、極を$b_1,\ldots,b_m$とする。
@@ -183,15 +181,13 @@ $$
 
 $f$による$C$の像を$\Gamma$とし、$w=f(z)$とすると
 $$
-  \frac{1}{2\pi i}\int_C\frac{f\'(z)}{f(z)}dz
-  &=\frac{1}{2\pi i}\int_\Gamma\frac{dw}{w}\\
-  &=n(\Gamma,0)
+  \frac{1}{2\pi i}\int_C\frac{f\'(z)}{f(z)}dz=\frac{1}{2\pi i}\int_\Gamma\frac{dw}{w}=n(\Gamma,0)
 $$
 となる。
 このことから、この積分は$f(z)$の偏角の増加量と解釈できる。    
 
 さらに次のように一般化できる。
-$g(z)$を$\Omega$で正則とすると、$g(z)\dfrac{f\'(z)}{f(z)}$は$f$の$h$の零点$z=a$では留数$hg(a)$をもち、
+$g(z)$を$\Omega$で正則とすると、$g(z)\dfrac{f\'(z)}{f(z)}$は$f$の$h$位の零点$z=a$では留数$hg(a)$をもち、
 $f$の$h$位の極では留数$-hg(a)$を持つ。
 よって
 $$
