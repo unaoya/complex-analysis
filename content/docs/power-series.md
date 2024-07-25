@@ -31,7 +31,7 @@ $$
   これは$\lvert z\rvert&lt;1$の範囲で、$\dfrac{1}{1-z}$に収束する。
 {{< /hint >}}
 
-和や積、項別微分と項別積分
+冪級数の和や積について。
 
 $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum_nca_nz^n$が収束する。
 積は$\sum_n(\sum_ka_{n-k}b_k)z^n$が収束する？
@@ -83,8 +83,10 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
 
 冪級数の様々な演算
 
+冪級数の項別微分と項別積分について。
+
 {{< hint >}}
-  $f(z)=\sum_{n=0}^\infty a_nz^n$の収束半径が$R>0$であるとする。
+  冪級数により定まる関数$f(z)=\sum_{n=0}^\infty a_nz^n$の収束半径が$R>0$であるとする。
   このとき、収束円板上で連続であり、正則で、
   $$
   f\'(z)=\sum_{n=0}^\infty na_nz^{n-1}=\sum_{n=0}^\infty(n+1)a_{n+1}z^n
@@ -199,15 +201,15 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
 {{< hint >}}
     $f$は領域$\Omega$で正則とする。
     このとき、$a\in\Omega$に対し、ある$\Omega$で正則な関数$f_n(z)$が存在して
-    \begin{align*}
+    $$
       f(z)=f(a)+f\'(a)(z-a)+\frac{f^{(2)}(a)}{2!}(z-a)^2+\cdots+\frac{f^{(n-1)}(a)}{(n-1)!}(z-a)^{n-1}+f_n(z)(z-a)^n
-    \end{align*}
+    $$
     となる。
   
     さらに、$z=a$を中心とする十分小さな円周$C$に対し
-    \begin{align*}
+    $$
       f_n(z)=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-a)^n(\zeta-z)}d\zeta
-    \end{align*}
+    $$
     となる。  
 {{< /hint >}}
 
@@ -221,20 +223,20 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
 {{< hint >}}
     まず、ある円$C$の内部で$f$が恒等的に$0$であることを示す。
     微分係数が全て$0$であるとすると、任意の$n$に対しある正則関数$f_n(z)$が存在して
-    \begin{align*}
+    $$
       f(z)=f_n(z)(z-a)^n
-    \end{align*}
+    $$
     となる。
     この円$C$及びその内部における$\abs{f(z)}$の最大値を$M$とし、$C$の半径を$R$とすると、
     上の定理の剰余項の表示から
-    \begin{align*}
+    $$
       \abs{f_n(z)}\leq\frac{M}{R^{n-1}(R-\abs{z-a})}
-    \end{align*}
+    $$
     となる。
     よって
-    \begin{align*}
+    $$
       \abs{f(z)}\leq(\frac{\abs{z-a}}{R})^n\frac{MR}{R-\abs{z-a}}
-    \end{align*}
+    $$
     となる。
     ここで、$\abs{z-a}&lt;R$となるので、$n\to\infty$で右辺は$0$に収束するから$f(z)=0$となる。
   
@@ -296,15 +298,15 @@ $z=\alpha$が零点の集積点であるとは（$f(\alpha)\neq0$でもよい？
 
 {{< hint >}}
   ベキ級数
-  \begin{align*}
+  $$
     f(z)=1+z+z^2+\cdots
-  \end{align*}
+  $$
   は$\abs{z}&lt;1$で絶対収束し正則関数を定める。
 
   この範囲で、等比数列の和の公式から
-  \begin{align*}
+  $$
     f(z)=\frac{1}{1-z}
-  \end{align*}
+  $$
   となる。
 
   この右辺の式は$z\neq1$で正則関数を定める。
@@ -314,31 +316,31 @@ $z=\alpha$が零点の集積点であるとは（$f(\alpha)\neq0$でもよい？
 
 {{< hint >}}
   実部が$Re(s)>0$なる複素数$s$に対し
-  \begin{align*}
+  $$
     \int^\infty_0e^{-t}t^{s-1}dt
-  \end{align*}
+  $$
   をガンマ関数と呼ぶ。
   この積分は収束し、正則関数を定める。
 {{< /hint >}}
 
 部分積分により、上と同じ範囲の複素数$s$に対して
-\begin{align*}
+$$
   \Gamma(s+1)=s\Gamma(s)
-\end{align*}
+$$
 が成り立つ。
 
 そこで、実部が$-1$より大きな複素数$s$に対し
-\begin{align*}
+$$
   G(s)=\frac{\Gamma(s+1)}{s}
-\end{align*}
+$$
 と定義しよう。
 $s+1$の実部は$0$より大きいので、これの右辺は有理形関数で$s=0$で一位の極を持ちそれ以外では正則である。
 さらに、その留数は$\Gamma(1)=1$である。
 
 この$G(s)$について、$\Re(s)>0$においては
-\begin{align*}
+$$
   G(s)=\frac{\Gamma(s+1)}{s}=\Gamma(s)
-\end{align*}
+$$
 が成り立つ。
 つまり、$G(s)$は$\Gamma(s)$を$\Re(s)>-1$に解析接続した関数となっている。
 
@@ -347,7 +349,7 @@ $s=0,-1,-2,\ldots$に$1$位の極を持つ以外では正則である。
 また、極$s=-n$における留数は$\dfrac{(-1)^n}{n!}$であることがわかる。
 
 このガンマ関数は、前に留数定理を用いて示したように
-\begin{align*}
+$$
   \Gamma(s)\Gamma(1-s)=\frac{\pi}{\sin\pi s}
-\end{align*}
+$$
 をみたす。

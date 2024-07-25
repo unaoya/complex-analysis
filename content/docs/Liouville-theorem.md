@@ -1,5 +1,5 @@
 ---
-title: "Liouville Theorem"
+title: "リュービルの定理"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
@@ -9,28 +9,15 @@ weight: 1
 # bookSearchExclude: false
 ---
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8"/>
-<link rel="stylesheet" href="../style.css">
-<script type="text/javascript" src="../config.js" defer></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
-<title>リュービルの定理</title>
-</head>
-<body>
-<h1>リュービルの定理</h1>
+# リュービルの定理
 
+リューヴィルの定理．最大値の原理
+コーシーの積分公式の応用として，リューヴィルの定理，代数学の基本定理，最大値の原理などについて解説する．    
+コーシーの積分公式を用いて次のリュービルの定理を証明し、
+その応用として任意の多項式は必ず複素数の範囲で解を持つという事実を証明しよう。
 
-    リューヴィルの定理．最大値の原理
-    コーシーの積分公式の応用として，リューヴィルの定理，代数学の基本定理，最大値の原理などについて解説する．    
-    コーシーの積分公式を用いて次のリュービルの定理を証明し、
-    その応用として任意の多項式は必ず複素数の範囲で解を持つという事実を証明しよう。
-
-
-
-    リューヴィルの定理とは。
-    $\CC$上正則で有界な関数は定数のみ。
+リューヴィルの定理とは。
+$\CC$上正則で有界な関数は定数のみ。
 
 
 {{< hint >}}
@@ -59,8 +46,7 @@ weight: 1
     よって任意の$z\in\CC$で$f'(z)=0$となり$f(z)$は定数関数である。  
 {{< /hint >}}
 
-
-    代数学の基本定理
+代数学の基本定理
 
 
 {{< hint >}}
@@ -75,7 +61,7 @@ weight: 1
 {{< /hint >}}
 
 
-    最大値の原理
+# 最大値の原理
 
 
 {{< hint >}}
@@ -100,8 +86,7 @@ weight: 1
 {{< /hint >}}
 
 
-    平均値の性質
-
+# 平均値の性質
 
 {{< hint >}}
     $f$が円$C=C(\alpha,r)$とその内部で正則であるとき、
@@ -120,6 +105,3 @@ weight: 1
     $$
     である。
 {{< /hint >}}
-
-</body>
-</html>

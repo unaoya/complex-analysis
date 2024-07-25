@@ -117,21 +117,6 @@ $$
 がなりたつ。
 {{< /hint >}}
 
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8"/>
-<link rel="stylesheet" href="../style.css">
-<script type="text/javascript" src="../config.js" defer></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
-<title>複素線積分</title>
-</head>
-<body>
-
-# 複素線積分
-
-## 複素線積分
 ## 線積分の計算例
 
 
