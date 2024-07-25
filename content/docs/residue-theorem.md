@@ -61,7 +61,7 @@ $$
 
 つまり、
 $$
-  \Res_{z=\alpha}f(z)=\frac{1}{2\pi i}\int_{\lvert\zeta-\alpha\rvert=r}f(z)dz
+  Res_{z=\alpha}f(z)=\frac{1}{2\pi i}\int_{\lvert\zeta-\alpha\rvert=r}f(z)dz
 $$
 である。
 
@@ -91,7 +91,7 @@ $$
   関数$f$は$\alpha_1,\ldots,\alpha_k\in D$をのぞき$\overline{D}$で正則であるとする。
   このとき、
   $$
-    \int_Cf(z)dz=2\pi i\sum_{j=1}^k\Res_{z=\alpha_j}f(z)
+    \int_Cf(z)dz=2\pi i\sum_{j=1}^k Res_{z=\alpha_j}f(z)
   $$
   が成り立つ。
 {{< /hint >}}
@@ -150,9 +150,9 @@ $$
   $$
     \lvert\int_{C\'_R}\frac{1}{z^2+1}dz\rvert
     =
-    \lvert\int^\pi_0\frac{1}{R^2\exp(2\pi it)+1}R2\pi i\exp(2\pi it)dt\rvert
+    \lvert\int^\pi_{0}\frac{1}{R^2\exp(2\pi it)+1}R2\pi i\exp(2\pi it)dt\rvert
     \leq
-    2\pi R\int^\pi_0\frac{1}{R^2+1}dt
+    2\pi R\int^\pi_{0}\frac{1}{R^2+1}dt
     =
     2\pi^2\frac{R}{R^2+1}
   $$
