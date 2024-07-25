@@ -23,6 +23,7 @@ weight: 1
 $\alpha$を$f$の孤立特異点という。
 
 {{< hint >}}
+
     $f(z)$が$z=a$の近傍で$z=a$を除いて正則であるとする。
     つまり、ある$\delta$について$0&lt;\abs{z-a}&lt;\delta$で$f(z)$が正則であるとする。
   
@@ -32,7 +33,7 @@ $\alpha$を$f$の孤立特異点という。
 孤立特異点の例を見ていく。
 
 {{< hint >}}
-  $f(z)=\dfrac{1}{z}, f(z)=\dfrac{1}{\sin z}
+  $f(z)=\dfrac{1}{z}, f(z)=\dfrac{1}{\sin z}$
 {{< /hint >}}
 
 {{< hint >}}
@@ -47,16 +48,16 @@ $\alpha$を$f$の孤立特異点という。
 
 $z=a$を$f(z)$の孤立特異点としよう。
 このとき、$f$は$z=a$の周りでローラン展開
-\begin{align*}
+$$
     f(z)=\sum_{n=-\infty}^\infty a_n(z-a)^n
-\end{align*}
+$$
 を持つ。
 ローラン級数展開の係数$a_n$は積分表示を持つ。
 
 特に負冪部分
-\begin{align*}
+$$
     \sum_{n=-\infty}^{-1} a_n(z-a)^n
-\end{align*}
+$$
 を主要部という。
 
 $f$が$z=\alpha$を孤立特異点に持つとする。
@@ -79,13 +80,13 @@ $$
 となる。
 ここで、$\zeta\in C_2$であれば$\lvert z-\alpha\rvert&lt;\lvert \zeta-\alpha\rvert$であるから、
 $$
-\dfrac{1}{(\zeta-\alpha)-(z-\alpha)}=\dfrac{1}{\zeta-\alpha}\dfrac{1}{1-(z-\alpha)/(\zeta-alpha)}\\
+\dfrac{1}{(\zeta-\alpha)-(z-\alpha)}=\dfrac{1}{\zeta-\alpha}\dfrac{1}{1-(z-\alpha)/(\zeta-\alpha)}\\
 =\dfrac{1}{\zeta-\alpha}\sum_{n=0}^\infty(\dfrac{z-\alpha}{\zeta-\alpha})^n
 $$
 が収束する。
 一方で、$\zeta\in C_1$であれば$\lvert z-\alpha\rvert&gt;\lvert \zeta-\alpha\rvert$であるから、
 $$
-\dfrac{1}{(\zeta-\alpha)-(z-\alpha)}=-\dfrac{1}{z-\alpha}\dfrac{1}{1-(\zeta-\alpha)/(z-alpha)}\\
+\dfrac{1}{(\zeta-\alpha)-(z-\alpha)}=-\dfrac{1}{z-\alpha}\dfrac{1}{1-(\zeta-\alpha)/(z-\alpha)}\\
 =\dfrac{1}{z-\alpha}\sum_{n=0}^\infty(\dfrac{\zeta-\alpha}{z-\alpha})^n
 $$
 が収束する。
@@ -93,8 +94,8 @@ $$
 以上から、
 $$
 f(z)=-\frac{1}{2\pi i}\int_{C_1}\frac{f(\zeta)}{\zeta-z}d\zeta+\frac{1}{2\pi i}\int_{C_2}\frac{f(\zeta)}{\zeta-z}d\zeta\\
-=\frac{1}{2\pi i}\int_{C_1}\frac{1}{\zeta-\alpha}\sum_{n=1}^\infty(\frac{\zeta-alpha}{z-\alpha})^nf(\zeta)d\zeta+
-\frac{1}{2\pi i}\int_{C_2}\frac{1}{\zeta-\alpha}\sum_{n=0}^\infty(\frac{z-alpha}{\zeta-\alpha})^nf(\zeta)d\zeta\\
+=\frac{1}{2\pi i}\int_{C_1}\frac{1}{\zeta-\alpha}\sum_{n=1}^\infty(\frac{\zeta-\alpha}{z-\alpha})^nf(\zeta)d\zeta+
+\frac{1}{2\pi i}\int_{C_2}\frac{1}{\zeta-\alpha}\sum_{n=0}^\infty(\frac{z-\alpha}{\zeta-\alpha})^nf(\zeta)d\zeta\\
 =\frac{1}{2\pi i}\sum_{n=1}^\infty(\int_{C_1}(\zeta-\alpha)^{-n}f(\zeta)d\zeta)(z-\alpha)^{-n}
 +\frac{1}{2\pi i}\sum_{n=0}^\infty(\int_{C_2}(\zeta-\alpha)^{-(n+1)}f(\zeta)d\zeta)(z-\alpha)^{n}
 $$
@@ -147,6 +148,7 @@ $z\to\alpha$での振る舞い。
 除去可能特異点なら有限値に収束、極なら$\infty$に発散、真性特異点なら近づき方によっていろんな値になる。
 
 {{< hint >}}
+
     $z=a$が$f(z)$の孤立特異点であり、$z=a$を含めた領域で正則な函数$g(z)$が存在して、
     $z\neq a$では$f(z)=g(z)$であるとき、$z=a$は除去可能特異点であるという。
 {{< /hint >}}
@@ -154,6 +156,7 @@ $z\to\alpha$での振る舞い。
 要するに除去可能特異点は見かけ上特異点のようになっているが、実際のところ特異点ではないものである。
 
 {{< hint >}}
+
     $\dfrac{e^z-1}{z}, \dfrac{\sin z}{z}$など。
     $z=0$が除去可能特異点。
 {{< /hint >}}
