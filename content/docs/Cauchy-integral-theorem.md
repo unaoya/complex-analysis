@@ -279,7 +279,7 @@ $$
 である。
 すると、$R^1$から$R^4$のうちの少なくとも一つは
 $$
-  \abs{\eta(R^i)}\geq\abs{\eta(R)}
+  \lvert\eta(R^i)\rvert\geq\lvert\eta(R)\rvert
 $$
 を満たす。
 これを$R_1$と書くことにしよう。
@@ -289,7 +289,7 @@ $$
 これを同様に繰り返すことで$R_n$を定義する。
 つまり、
 $$
-  \abs{\eta(R_n)}\geq\frac{1}{4}\abs{\eta(R_{n-1})}
+  \lvert\eta(R_n)\rvert\geq\frac{1}{4}\lvert\eta(R_{n-1})\rvert
 $$
 が成立するように長方形をどんどん小さくとっていく。
 
@@ -297,18 +297,18 @@ $$
 
 すると
 $$
-  \abs{\eta(R_n)}\geq\frac{1}{4^n}\abs{\eta(R)}
+  \lvert \eta(R_n) \rvert\geq\frac{1}{4^n}\lvert \eta(R) \rvert
 $$
 が成り立つ。
 
 
 
 この長方形はある点$z_*$に収束する。
-正確にいうと、任意の$\delta$に対して十分大きな$n$について$R_n$は$\abs{z-z_*}&lt;\delta$に含まれる。
+正確にいうと、任意の$\delta$に対して十分大きな$n$について$R_n$は$\lvert z-z_* \rvert&lt;\delta$に含まれる。
 このとき、$f$が$z_*$で正則であるから、微分係数の定義から、
-任意の$\epsilon>0$に対し、$\delta$を適当に取ることで、$0&lt;\abs{z-z_*}&lt;\delta$に対し
+任意の$\epsilon>0$に対し、$\delta$を適当に取ることで、$0&lt;\lvert z-z_* \rvert&lt;\delta$に対し
 $$
-  \abs{f(z)-f(z_*)-(z-z_*)f\'(z_*)}&lt;\epsilon\abs{z-z_*}
+  \lvert f(z)-f(z_*)-(z-z_*)f\'(z_*) \rvert&lt;\epsilon\lvert z-z_* \rvert
 $$
 が成り立つようにできる。
 
@@ -331,15 +331,15 @@ $$
 が成り立つ。
 上の不等式により
 $$
-  \abs{\eta(R_n)}\leq\epsilon\int_{\partial R_n}\abs{z-z_*}\abs{dz}
+  \lvert \eta(R_n) \rvert\leq\epsilon\int_{\partial R_n}\lvert z-z_* \rvert\lvert dz \rvert
 $$
 となる。
 
 
 
-ここで$\abs{z-z_*}$は$R_n$の対角線の長さ$d_n$より小さく、また$R_n$の周の長さを$L_n$とすると、
+ここで$\lvert z-z_* \rvert$は$R_n$の対角線の長さ$d_n$より小さく、また$R_n$の周の長さを$L_n$とすると、
 $$
-  \epsilon\int_{\partial R_n}\abs{z-z_*}\abs{dz}\leq d_nL_n
+  \epsilon\int_{\partial R_n}\lvert z-z_* \rvert\lvert dz \rvert\leq d_nL_n
 $$
 となる。
 
@@ -347,11 +347,11 @@ $$
 
 $R$の対角線の長さ$d$、周の長さ$L$とすると、$d_n=\dfrac{1}{2^n}d, L_n=\dfrac{1}{2^n}L$であるから、
 $$
-  \abs{\eta(R_n)}\leq\frac{1}{4^n}dL\epsilon
+  \lvert \eta(R_n) \rvert\leq\frac{1}{4^n}dL\epsilon
 $$
 となり、
 $$
-  \abs{\eta(R)}\leq dL\epsilon
+  \lvert \eta(R) \rvert\leq dL\epsilon
 $$
 が成立する。
 
