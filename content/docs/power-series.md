@@ -83,7 +83,7 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
 
 冪級数の様々な演算
 
-冪級数の項別微分と項別積分について。
+## 冪級数の項別微分と項別積分
 
 {{< hint >}}
   冪級数により定まる関数$f(z)=\sum_{n=0}^\infty a_nz^n$の収束半径が$R>0$であるとする。
@@ -137,38 +137,44 @@ $\lvert\dfrac{z-\alpha}{\zeta-\alpha}\rvert&lt;1$ならよい。
 $f(z), g(z)$が$z=\alpha$で解析的で、$n=0,\ldots,m-1$で$f^{(n)}(\alpha)=g^{(n)}(\alpha)=0$とする。
 このとき、$g^{(m)}(\alpha)\neq0$であれば
 $$
-\lim_{z\to\alpha}\frac{f(z)}{g(z)}=\lim_{z\to\alpha}\frac{f^{(m)}(\alpha)}{g^{(m)}(\alpha)}
+  \lim_{z\to\alpha}\frac{f(z)}{g(z)}=\lim_{z\to\alpha}\frac{f^{(m)}(\alpha)}{g^{(m)}(\alpha)}
 $$
 が成り立つ。
 
 {{< hint >}}
   $$
-  \lim_{z\to e^{2\pi i/n}}\frac{z-e^{2\pi i/n}}{z^n-1}\\
-  \lim_{z\to 0}\frac{e^z-\cos z-z}{z^2}\\
-  \lim_{z\to i}\frac{\cosh(\pi z/2)}{\Log(-iz)}
+    \lim_{z\to e^{2\pi i/n}}\frac{z-e^{2\pi i/n}}{z^n-1}
+  $$
+
+  $$
+    \lim_{z\to 0}\frac{e^z-\cos z-z}{z^2}
+  $$
+
+  $$
+    \lim_{z\to i}\frac{\cosh(\pi z/2)}{\Log(-iz)}
   $$
 {{< /hint >}}
 
 指数関数$f(z)=e^z$の冪級数展開。
 $$
-e^z= \sum_{n=0}^\infty\frac{1}{n!}z^n
+  e^z= \sum_{n=0}^\infty\frac{1}{n!}z^n
 $$
 である。
 収束半径は$\infty$である。
 
-対数関数の主値、$f(z)=\Log(1+z)$の冪級数展開。
+対数関数の主値、$f(z)=Log(1+z)$の冪級数展開。
 $$
-\Log(1+z)=\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n}z^n
+  Log(1+z)=\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n}z^n
 $$
 収束半径は$1$
 
 冪函数$f(z)=(1+z)^\alpha$の冪級数展開。
 $$
-(1+z)^\alpha=\sum_{n=0}^\infty\binom{\alpha}{n}z^n
+  (1+z)^\alpha=\sum_{n=0}^\infty\binom{\alpha}{n}z^n
 $$
 ここで、$\binom{\alpha}{n}$は一般化二項係数で、
 $$
-\binom{\alpha}{n}=\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}
+  \binom{\alpha}{n}=\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}
 $$
 で定まるもの。
 
@@ -195,56 +201,55 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
 ## 一致の定理と解析接続
 
 ここでは正則関数の解析接続という概念を紹介する。
-
 まずは、正則関数がテイラー展開できるという事実を証明抜きで紹介しよう。
 
 {{< hint >}}
-    $f$は領域$\Omega$で正則とする。
-    このとき、$a\in\Omega$に対し、ある$\Omega$で正則な関数$f_n(z)$が存在して
-    $$
-      f(z)=f(a)+f\'(a)(z-a)+\frac{f^{(2)}(a)}{2!}(z-a)^2+\cdots+\frac{f^{(n-1)}(a)}{(n-1)!}(z-a)^{n-1}+f_n(z)(z-a)^n
-    $$
-    となる。
-  
-    さらに、$z=a$を中心とする十分小さな円周$C$に対し
-    $$
-      f_n(z)=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-a)^n(\zeta-z)}d\zeta
-    $$
-    となる。  
+  $f$は領域$\Omega$で正則とする。
+  このとき、$a\in\Omega$に対し、ある$\Omega$で正則な関数$f_n(z)$が存在して
+  $$
+    f(z)=f(a)+f\'(a)(z-a)+\frac{f^{(2)}(a)}{2!}(z-a)^2+\cdots+\frac{f^{(n-1)}(a)}{(n-1)!}(z-a)^{n-1}+f_n(z)(z-a)^n
+  $$
+  となる。
+
+  さらに、$z=a$を中心とする十分小さな円周$C$に対し
+  $$
+    f_n(z)=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-a)^n(\zeta-z)}d\zeta
+  $$
+  となる。  
 {{< /hint >}}
 
 この事実を用いると次のことが証明できる。
 
 {{< hint >}}
-    $\Omega$で正則な関数$f(z)$について、
-    $z=a$で微分係数が全て$0$だとすると$f(z)$は恒等的に$0$である。  
+  $\Omega$で正則な関数$f(z)$について、
+  $z=a$で微分係数が全て$0$だとすると$f(z)$は恒等的に$0$である。  
 {{< /hint >}}
 
 {{< hint >}}
-    まず、ある円$C$の内部で$f$が恒等的に$0$であることを示す。
-    微分係数が全て$0$であるとすると、任意の$n$に対しある正則関数$f_n(z)$が存在して
-    $$
-      f(z)=f_n(z)(z-a)^n
-    $$
-    となる。
-    この円$C$及びその内部における$\lvert f(z) \rvert$の最大値を$M$とし、$C$の半径を$R$とすると、
-    上の定理の剰余項の表示から
-    $$
-      \lvert f_n(z) \rvert\leq\frac{M}{R^{n-1}(R-\lvert z-a \rvert)}
-    $$
-    となる。
-    よって
-    $$
-      \lvert f(z) \rvert\leq(\frac{\lvert z-a \rvert}{R})^n\frac{MR}{R-\lvert z-a \rvert}
-    $$
-    となる。
-    ここで、$\lvert z-a \rvert&lt;R$となるので、$n\to\infty$で右辺は$0$に収束するから$f(z)=0$となる。
-  
-    さて$\Omega$全体で$f$が恒等的に$0$であることを示す。
-    $E_1\subset\Omega$を$f$及びその導関数が全て$0$になる点のなす集合とする。
-    上で見たことより、$E_1$は開集合である。
-    一方で、$E_1$は閉集合でもある。
-    $\Omega$が連結で$E_1$は空でないので$\Omega=E_1$となる。  
+  まず、ある円$C$の内部で$f$が恒等的に$0$であることを示す。
+  微分係数が全て$0$であるとすると、任意の$n$に対しある正則関数$f_n(z)$が存在して
+  $$
+    f(z)=f_n(z)(z-a)^n
+  $$
+  となる。
+  この円$C$及びその内部における$\lvert f(z) \rvert$の最大値を$M$とし、$C$の半径を$R$とすると、
+  上の定理の剰余項の表示から
+  $$
+    \lvert f_n(z) \rvert\leq\frac{M}{R^{n-1}(R-\lvert z-a \rvert)}
+  $$
+  となる。
+  よって
+  $$
+    \lvert f(z) \rvert\leq(\frac{\lvert z-a \rvert}{R})^n\frac{MR}{R-\lvert z-a \rvert}
+  $$
+  となる。
+  ここで、$\lvert z-a \rvert&lt;R$となるので、$n\to\infty$で右辺は$0$に収束するから$f(z)=0$となる。
+
+  さて$\Omega$全体で$f$が恒等的に$0$であることを示す。
+  $E_1\subset\Omega$を$f$及びその導関数が全て$0$になる点のなす集合とする。
+  上で見たことより、$E_1$は開集合である。
+  一方で、$E_1$は閉集合でもある。
+  $\Omega$が連結で$E_1$は空でないので$\Omega=E_1$となる。  
 {{< /hint >}}
 
 上の定理の対偶で$f$が恒等的に$0$という関数でなければ、微分係数が$0$でない$k$が存在する。
@@ -256,7 +261,7 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
   ある$n_0$で$a_{n_0}\neq0$かつ$n&lt; n_0$ならば$a_n=0$であるとする。
   このとき、
   $$
-  f(z)=(z-\alpha)^{n_0}\sum_{n=0}^\infty a_{n_0+n}(z-\alpha)^n
+    f(z)=(z-\alpha)^{n_0}\sum_{n=0}^\infty a_{n_0+n}(z-\alpha)^n
   $$
   となる。
   $b_n=a_{n_0+n}$とおき、$g(z)=\sum_{n=0}^\infty a_{n_0+n}(z-\alpha)^n$とおく。
