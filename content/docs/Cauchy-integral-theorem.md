@@ -13,11 +13,6 @@ weight: 1
 
 ここではコーシーの積分定理について説明する。
 
-
-{{< katex display=true >}}
-  \int_Cf(z)dz=0
-{{< /katex >}}
-
 {{< hint >}}
 複素平面内の領域$U\subset \mathbb{C}$上の正則関数$f:U\to\mathbb{C}$と、
 $U$内の閉曲線$C$が適切な条件を満たすとき、以下の式が成り立つ。
@@ -38,11 +33,7 @@ $B\subset D$とする。
 
 このとき、複素線積分の定義と、グリーンの定理から、$f(z)=u(x,y)+iv(x,y)$に対して
 $$
-  \int_Cf(z)dz
-  =
-  \int_C(u(x,y)dx-v(x,y)dy)+i\int_C(u(x,y)dy+v(X,y)dx)\\
-  =
-  -\int\int_B(v_x(x,y)+u_y(x,y))dxdy+i\int\int_B(u_x(x,y)-v_y(x,y))dxdy
+  \int_Cf(z)dz=\int_C(u(x,y)dx-v(x,y)dy)+i\int_C(u(x,y)dy+v(X,y)dx)=-\int\int_B(v_x(x,y)+u_y(x,y))dxdy+i\int\int_B(u_x(x,y)-v_y(x,y))dxdy
 $$
 となる。
 
