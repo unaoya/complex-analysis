@@ -148,7 +148,7 @@ $$
   である。
   したがって、
   $$
-    \lvert\int_{C\'_R}\frac{1}{z^2+1}dz\rvert
+    \lvert\int_{C_R}\frac{1}{z^2+1}dz\rvert
     =
     \lvert\int^\pi_{0}\frac{1}{R^2\exp(2\pi it)+1}R2\pi i\exp(2\pi it)dt\rvert
     \leq
