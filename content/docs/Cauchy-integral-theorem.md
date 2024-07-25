@@ -15,7 +15,7 @@ draft = false
 
 {{< hint >}}
 
-以下の式が成り立つ．
+以下の式が成り立つ
 
 {{< katex display=true >}}
   \int_Cf(z)dz=0
