@@ -24,7 +24,7 @@ weight: 1
 
 <p>
     $z=e^{i\theta}$とおく。
-    $\theta$の$0\leq\theta\leq2\pi$での積分は$\abs{z}=1$での積分になる。
+    $\theta$の$0\leq\theta\leq2\pi$での積分は$\lvert z \rvert=1$での積分になる。
     $$
     \cos\theta=\frac{z+z^{-1}}{2}, \sin\theta=\frac{z-z^{-1}}{2i}, dz=ie^{i\theta}d\theta=izd\theta
     $$
@@ -323,9 +323,9 @@ weight: 1
     となる。
     これの絶対値は
     \begin{align*}
-      \abs{\int_{C_2}f(z)dz}
+      \lvert \int_{C_2 \rvertf(z)dz}
       &\leq
-      2\pi R^{s-1}\int_0^1\frac{1}{\abs{\exp(2\pi it)+1/R}}dt
+      2\pi R^{s-1}\int_0^1\frac{1}{\lvert \exp(2\pi it)+1/R \rvert}dt
     \end{align*}
     となり、これは$s$の実部が$1$より小さいから$R\to\infty$で$0$に収束する。
   </p>
@@ -479,7 +479,7 @@ weight: 1
     となる。
     $r\to0$の極限を計算することに注意して、$r$を十分小さいとすれば
     \begin{align*}
-      \abs{\int_{C_1}f(z)dz}
+      \lvert \int_{C_1 \rvertf(z)dz}
       &\leq
       2\pi r\int_0^1(r(b-a))^{-1/2}dt\
     \end{align*}

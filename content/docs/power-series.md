@@ -227,18 +227,18 @@ $\dfrac{1}{1-\sin z}$を$z=0$中心に冪級数展開し、収束半径を求め
       f(z)=f_n(z)(z-a)^n
     $$
     となる。
-    この円$C$及びその内部における$\abs{f(z)}$の最大値を$M$とし、$C$の半径を$R$とすると、
+    この円$C$及びその内部における$\lvert f(z) \rvert$の最大値を$M$とし、$C$の半径を$R$とすると、
     上の定理の剰余項の表示から
     $$
-      \abs{f_n(z)}\leq\frac{M}{R^{n-1}(R-\abs{z-a})}
+      \lvert f_n(z) \rvert\leq\frac{M}{R^{n-1}(R-\lvert z-a \rvert)}
     $$
     となる。
     よって
     $$
-      \abs{f(z)}\leq(\frac{\abs{z-a}}{R})^n\frac{MR}{R-\abs{z-a}}
+      \lvert f(z) \rvert\leq(\frac{\lvert z-a \rvert}{R})^n\frac{MR}{R-\lvert z-a \rvert}
     $$
     となる。
-    ここで、$\abs{z-a}&lt;R$となるので、$n\to\infty$で右辺は$0$に収束するから$f(z)=0$となる。
+    ここで、$\lvert z-a \rvert&lt;R$となるので、$n\to\infty$で右辺は$0$に収束するから$f(z)=0$となる。
   
     さて$\Omega$全体で$f$が恒等的に$0$であることを示す。
     $E_1\subset\Omega$を$f$及びその導関数が全て$0$になる点のなす集合とする。
@@ -301,7 +301,7 @@ $z=\alpha$が零点の集積点であるとは（$f(\alpha)\neq0$でもよい？
   $$
     f(z)=1+z+z^2+\cdots
   $$
-  は$\abs{z}&lt;1$で絶対収束し正則関数を定める。
+  は$\lvert z \rvert&lt;1$で絶対収束し正則関数を定める。
 
   この範囲で、等比数列の和の公式から
   $$

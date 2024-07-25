@@ -22,13 +22,13 @@ $\CC$上正則で有界な関数は定数のみ。
 
 {{< hint >}}
     複素平面$\CC$全体で正則な関数$f$に対し、
-    ある定数$M$が存在して任意の$z\in\CC$に対して$\abs{f(z)}&lt;M$であるとする。
+    ある定数$M$が存在して任意の$z\in\CC$に対して$\lvert f(z) \rvert&lt;M$であるとする。
     このとき、$f$は定数関数である。
 {{< /hint >}}
 
 {{< hint >}}
     $f(z)$を有界と仮定し、その上界を一つとり$M$とする。
-    つまり、任意の$z\in\CC$に対し$\abs{f(z)}&lt;M$である。
+    つまり、任意の$z\in\CC$に対し$\lvert f(z) \rvert&lt;M$である。
   
     先ほど示したことから任意の円周$C$に対し、その内部の点$z$について
     \begin{align*}
@@ -38,7 +38,7 @@ $\CC$上正則で有界な関数は定数のみ。
   
     $C$を半径$r$で中心$z=a$の円周とすると
     \begin{align*}
-      \abs{f'(a)}&\leq\frac{1}{2\pi i}\int_C\frac{\abs{f(\zeta)}}{(\zeta-a)^2}\abs{d\zeta}\\
+      \lvert f'(a) \rvert&\leq\frac{1}{2\pi i}\int_C\frac{\lvert f(\zeta) \rvert}{(\zeta-a)^2}\lvert d\zeta \rvert\\
       &\leq Mr^{-2}
     \end{align*}
     であるが、これが任意の$r$で成立するから$f'(a)=0$である。
@@ -55,7 +55,7 @@ $\CC$上正則で有界な関数は定数のみ。
 
 {{< hint >}}
     $P(z)$を$1$次以上の多項式とし、解を持たないと仮定する。
-    $z\to\infty$で$\abs{P(z)}\to\infty$であることから、
+    $z\to\infty$で$\lvert P(z) \rvert\to\infty$であることから、
     $\dfrac{1}{P(z)}$は$\CC$上で有界になる。
     リュービルの定理より$P(z)$は定数となり、これは矛盾。  
 {{< /hint >}}

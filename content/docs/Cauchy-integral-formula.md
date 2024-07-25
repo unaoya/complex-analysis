@@ -21,7 +21,7 @@ weight: 1
   関数$f(z)$が「中心$a$で半径$r$の閉円板$\overline{B_r(a)}$上正則」であり、$z$が円板の内部$B_r(a)$にあるとする。
   このとき
   $$    
-    f(z)=\frac{1}{2\pi i}\int_{\abs{\zeta-a}=r}\frac{f(\zeta)}{\zeta-z}d\zeta
+    f(z)=\frac{1}{2\pi i}\int_{\lvert \zeta-a \rvert=r}\frac{f(\zeta)}{\zeta-z}d\zeta
   $$
   が成り立つ。
 
@@ -126,9 +126,9 @@ $$
 は$z$について$C$の補集合で連続である。
 このことをまず確かめよう。
 
-$z=z_0$での連続性を議論するため、$\delta$を$\abs{z-z_0}&lt;\delta$が$C$と交わらないよう十分小さくとる。
-さらに$z$を$\abs{z-z_0}<\dfrac{\delta}{2}$となるよう取ると、
-任意の$\zeta\in C$に対し$\abs{\zeta-z}>\dfrac{\delta}{2}$である。
+$z=z_0$での連続性を議論するため、$\delta$を$\lvert z-z_0 \rvert&lt;\delta$が$C$と交わらないよう十分小さくとる。
+さらに$z$を$\lvert z-z_0 \rvert<\dfrac{\delta}{2}$となるよう取ると、
+任意の$\zeta\in C$に対し$\lvert \zeta-z \rvert>\dfrac{\delta}{2}$である。
 
 したがって
 $$
@@ -142,11 +142,11 @@ $$
 
 これの絶対値を評価すると
 $$
-\abs{F_1(z)-F_1(z_0)}
+\lvert F_1(z)-F_1(z_0) \rvert
 &\leq
-\abs{z-z_0}\int_C\frac{\abs{\phi(\zeta)}}{\abs{\zeta-z}\abs{\zeta-z_0}}\abs{d\zeta}\\
+\lvert z-z_0 \rvert\int_C\frac{\lvert \phi(\zeta) \rvert}{\lvert \zeta-z \rvert\lvert \zeta-z_0 \rvert}\lvert d\zeta \rvert\\
 &\leq
-\abs{z-z_0}\frac{\delta^2}{2}\int_C\abs{\phi(\zeta)}\abs{d\zeta}
+\lvert z-z_0 \rvert\frac{\delta^2}{2}\int_C\lvert \phi(\zeta) \rvert\lvert d\zeta \rvert
 $$
 となる。
 この積分は$z, z_0$によらない量であるから、上の不等式から$F_1$の連続性が示される。
@@ -326,8 +326,8 @@ $$
   
     第二項は
     $$
-      \abs{\int_0^1\exp(-R^2\exp(i\frac{\pi}{2}t))iR\frac{\pi}{4}\exp(i\frac{\pi}{4}t)dt}
-      &\leq\int_0^1\abs{\exp(-R^2\exp(i\frac{\pi}{2}t))iR\frac{\pi}{4}\exp(i\frac{\pi}{4}t)}dt\\
+      \lvert \int_0^1\exp(-R^2\exp(i\frac{\pi \rvert{2}t))iR\frac{\pi}{4}\exp(i\frac{\pi}{4}t)dt}
+      &\leq\int_0^1\lvert \exp(-R^2\exp(i\frac{\pi \rvert{2}t))iR\frac{\pi}{4}\exp(i\frac{\pi}{4}t)}dt\\
       &\leq\int_0^1R\exp(-R^2\cos(\frac{\pi}{2}t))\frac{\pi}{4}dt\
     $$
     となる。
@@ -411,8 +411,8 @@ $$
   
     まず$C_1$ではパラメータを$R+ti$とつけることで、
     $$
-      \abs{\int_0^T\frac{\exp(iR-t)}{R+ti}idt}
-      &\leq\int_0^T\abs{\frac{\exp(iR-t)}{R+ti}}dt\
+      \lvert \int_0^T\frac{\exp(iR-t) \rvert{R+ti}idt}
+      &\leq\int_0^T\lvert \frac{\exp(iR-t) \rvert{R+ti}}dt\
       &\leq\int_0^T\frac{\exp(-t)}{R}dt\
       &\leq\int_0^\infty\frac{\exp(-t)}{R}dt\
       &\leq\frac{1}{R}
@@ -424,7 +424,7 @@ $$
   
     $C_2$ではパラメータを$t+Ti$とつけることで
     $$
-      \abs{\int_R^{-R}\frac{\exp(it-T)}{t+Ti}dt}
+      \lvert \int_R^{-R \rvert\frac{\exp(it-T)}{t+Ti}dt}
       &\leq\frac{1}{T}\int^{-R}_R\exp(-T)dt\
       &=\frac{2Re^{-T}}{T}
     $$
@@ -453,10 +453,10 @@ $$
       \frac{\exp(iz)}{z}=z^{-1}+g(z)
     $$
     と収束半径$\infty$の冪級数$g(z)$を用いて表すことができ、
-    この$g(z)$は$\abs{z}\leq1$に対し$\abs{g(z)}\leq M$なる$M$が存在する。
+    この$g(z)$は$\lvert z \rvert\leq1$に対し$\lvert g(z) \rvert\leq M$なる$M$が存在する。
     このことにより、
     $$
-      \abs{\int_{C_5}g(z)dz}\leq\pi\epsilon M
+      \lvert \int_{C_5 \rvertg(z)dz}\leq\pi\epsilon M
     $$
     となり、$\epsilon\to0$で$0$に収束する。
     一方、直接計算により
@@ -488,7 +488,7 @@ $$
   $z=b, b+\dfrac{it}{2}, -a+\dfrac{it}{2}, -a$を頂点にもつ長方形の周に反時計回りに向きをつけた曲線を$C$とする。
   このとき、虚軸と平行な辺での積分は
   $$
-    \abs{\int^{b+it/2}_bf(z)dz}
+    \lvert \int^{b+it/2 \rvert_bf(z)dz}
     &\leq e^{-b^2}\int_0^{t/2} e^{y^2}dy\\
     &\leq \frac{t}{2}e^{-b^2}e^{t^2/4}
   $$

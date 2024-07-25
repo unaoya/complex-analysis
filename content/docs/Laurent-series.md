@@ -19,13 +19,13 @@ weight: 1
 ## 孤立特異点
 
 複素関数$f$が$z=\alpha$の周りで$\alpha$を除いて定義されかつ正則、
-つまりある正の数$R$が存在して$0 &lt; \abs{z-\alpha} &lt; R$上で$f$が正則なとき、
+つまりある正の数$R$が存在して$0 &lt; \lvert z-\alpha \rvert &lt; R$上で$f$が正則なとき、
 $\alpha$を$f$の孤立特異点という。
 
 {{< hint >}}
 
     $f(z)$が$z=a$の近傍で$z=a$を除いて正則であるとする。
-    つまり、ある$\delta$について$0&lt;\abs{z-a}&lt;\delta$で$f(z)$が正則であるとする。
+    つまり、ある$\delta$について$0&lt;\lvert z-a \rvert&lt;\delta$で$f(z)$が正則であるとする。
   
     このとき、$z=a$を$f(z)$の孤立特異点という。
 {{< /hint >}}
