@@ -15,20 +15,24 @@ weight: 1
 また，正則関数のべき級数展開について解説する．
 
 冪級数とは。
-$\alpha\in\mathbb{C}$に対し、$\alpha$を中心とする冪級数とは、$a_n\in\mathbb{C}$を用いて定まる
+$\alpha\in\mathbb{C}$に対し、$\alpha$を中心とする冪級数とは、複素数列$a_n\in\mathbb{C}$を用いて定まる
 $$
-\sum_{n=0}^\infty a_n(z-\alpha)^n
+  \sum_{n=0}^\infty a_n(z-\alpha)^n
 $$
-のこと。
+のことをいう。
+
 収束について。
 正確には、$\lim_{N\to\infty}\sum_{n=0}^Na_n(z-\alpha)^n$である。
+これが収束するとき、冪級数が$z$で収束するという。
 
 {{< hint >}}
+  全ての自然数$n$に対して$a_n=1$とすることで定まる
   $$
   \sum_{n=0}^\infty z^n=1+z+z^2+\cdots
   $$
   は$0$を中心とした冪級数。
-  これは$\lvert z\rvert&lt;1$の範囲で、$\dfrac{1}{1-z}$に収束する。
+
+  これは$\lvert z\rvert&lt;1$の範囲で収束し、その極限値は$\dfrac{1}{1-z}$である。
 {{< /hint >}}
 
 冪級数の和や積について。
@@ -41,7 +45,7 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $$
   \sum_{n=0}^\infty a_nz^n
   $$
-  が絶対収束するとは、
+  が*絶対収束*するとは、
   $$
   \sum_{n=0}^\infty\lvert a_n\rvert\lvert z\rvert^n
   $$
@@ -49,6 +53,10 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
 {{< /hint >}}
 
 冪級数が絶対収束するなら収束する。
+
+## 冪級数の収束半径
+
+冪級数の収束については次のことがわかる。
 
 {{< hint >}}
   べき級数の収束半径。
@@ -58,14 +66,18 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $\lvert z\rvert=R$においてはさまざまな可能性がある。
 {{< /hint >}}
 
+冪級数の収束半径を計算する方法として代表的なものが以下の二つ。
+
 {{< hint >}}
-  収束半径の計算方法。
   $\sum_{n=0}^\infty a_nz^n$の収束半径$R$は
   $$
   \limsup_{n\to\infty}\sqrt[n]{\lvert a_n\rvert}=\frac{1}{R}
   $$
   を満たす。
-  また、以下の極限が存在すれば等式が成立する。
+{{< /hint >}}
+
+{{< hint >}}
+  以下の極限が存在すれば等式が成立する。
   $$
   \lim_{n\to\infty}\frac{\lvert a_{n+1}\rvert}{\lvert a_n\rvert}=\frac{1}{R}
   $$
@@ -73,10 +85,10 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
 
 {{< hint >}}
   $$
-  \sum_{n=0}^\infty\frac{1}{n}z^n\\
-  \sum_{n=0}^\infty nz^n\\
-  \sum_{n=0}^\infty 8^nz^{3n}\\
-  \sum_{n=0}^\infty 3^nz^{2n}\\
+  \sum_{n=0}^\infty\frac{1}{n}z^n\\\\
+  \sum_{n=0}^\infty nz^n\\\\
+  \sum_{n=0}^\infty 8^nz^{3n}\\\\
+  \sum_{n=0}^\infty 3^nz^{2n}\\\\
   \sum_{n=0}^\infty \frac{(2n)!}{(n!)^2}z^n
   $$
 {{< /hint >}}
@@ -84,6 +96,10 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
 冪級数の様々な演算
 
 ## 冪級数の項別微分と項別積分
+
+冪級数により定まる関数（関数の冪級数展開）について、その微分や積分は容易に計算できる。
+極限の順序交換について議論する必要がある。
+特に、関数が冪級数展開できる場合、何回でも微分可能である。
 
 {{< hint >}}
   冪級数により定まる関数$f(z)=\sum_{n=0}^\infty a_nz^n$の収束半径が$R>0$であるとする。
@@ -112,22 +128,47 @@ $\sum_na_nz^n, \sum_nb_nz^n$が収束するならば、$\sum_n(a_n+b_n)z^n, \sum
   $f(z)=\sum_{n=0}^\infty a_n(z-\alpha)^n$とすると、$a_n=\dfrac{1}{n!}f^{(n)}(\alpha)$である。
 {{< /hint >}}
 
+## 冪級数で定まる関数の一致の定理
+
 ## 正則関数の冪級数展開
 
-コーシーの積分公式を用いる。
+正則関数は冪級数展開できる。
+このことは、以下のようにしてコーシーの積分公式を用いて証明できる。
+
+まず、コーシーの積分公式を復習しよう。
 $$
 f(z)=\frac{1}{2\pi i}\int_C\frac{f(\zeta)}{\zeta-z}d\zeta
 $$
-で$\dfrac{1}{\zeta-z}$を$z=\alpha$中心に展開する。
-$w=z-\alpha$とおいて、
+が成り立つ。
+
+これを用いて$f$の冪級数展開を計算するため、
+まずは被積分関数$\dfrac{1}{\zeta-z}$の$z=\alpha$を中心とする冪級数展開を計算する。
+その上で、無限和と積分の順序が交換できることを用いれば、$f$の冪級数展開を求めることができる。
+
+$w=z-\alpha$とおくと、
 $$
-\frac{1}{\zeta-z}=\frac{1}{\zeta-\alpha-w}=\frac{1/(\zeta-\alpha)}{1-(w/(\zeta-\alpha))}\\
-=\frac{1}{\zeta-\alpha}(1+\frac{w}{\zeta-\alpha}+\frac{w^2}{(\zeta-\alpha)^2}+\cdots)\\
+\frac{1}{\zeta-z}
+=\frac{1}{\zeta-\alpha-w}
+=\frac{1}{(\zeta-\alpha)(1-(w/(\zeta-\alpha)))}
+=\frac{1}{\zeta-\alpha}\times\frac{1}{1-(w/(\zeta-\alpha))}
+$$
+となる。
+
+ここで、等比級数の和の公式を用いると、
+$\lvert\dfrac{z-\alpha}{\zeta-\alpha}\rvert&lt;1$において、
+$$
+\frac{1}{1-(w/(\zeta-\alpha))}
+=(1+\frac{w}{\zeta-\alpha}+\frac{w^2}{(\zeta-\alpha)^2}+\cdots)
 =\sum_{n=0}^\infty\frac{(z-\alpha)^n}{(\zeta-\alpha)^{n+1}}
 $$
 となる。
-これが収束するか？
-$\lvert\dfrac{z-\alpha}{\zeta-\alpha}\rvert&lt;1$ならよい。
+
+よって、
+$$
+\frac{1}{\zeta-z}=\sum_{n=0}^\infty\frac{(z-\alpha)^n}{(\zeta-\alpha)^{n+1}}
+$$
+である。
+
 一様収束すれば順序交換できる。
 
 ## 初等関数のべき級数展開
